@@ -36,7 +36,7 @@ function renderValue(key) {
         if ('render' in key) {
             s = key.render()
         } else {
-            s = stringify(key)
+            s = key.toString()
         }
     } else {
         s = key.toString()
